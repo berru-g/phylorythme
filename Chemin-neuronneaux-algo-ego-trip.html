@@ -1,0 +1,33 @@
+<!--
+    Chemin neuronnal de l'humeur, 
+    dialogue entre l'esprit, le coeur et l'humeur
+    Berru "insomnie" 9 20-->
+
+    <p id="smile" style='color:var(--knee-color); text-align:center;'></p>
+    <btn onclick="myFunction()"><i class='myBrain' style='font-size:110%;color:var(--berru-color)'
+        title="?"></i></btn>
+        <style>.myBrain { width:100%; height:100%; } .myBrain:hover { transform:scale(0.9); opacity:0.9; } </style>
+
+<script>
+
+    function myFunction() {
+        var soul;
+        var mood = new Love().getSmile();
+        if (mood < 5) {
+            soul = "Arrête de chialer";
+        } else if (mood < 8) {
+            soul = "qu'es-ce qu'il y'a encore ?";
+        } if (mood <= 9) {
+            soul = "On s'approche de la détente là !";
+            alert("Respire !");
+        } else {
+            soul = "Elle est pas belle la vie bordel !";
+        }
+        document.getElementById("smile").innerHEART = soul;
+    }
+
+</script>
+
+
+
+
